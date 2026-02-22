@@ -1,0 +1,61 @@
+.mobilebar {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(210, 197, 197, 0.9) 0%,
+      rgba(201, 191, 191, 0.6) 15%,
+      transparent 35%
+    ),
+    radial-gradient(circle at 0% 10%, rgba(70,140,255,0.6), transparent 25%),
+    radial-gradient(circle at 0% 45%, rgba(255,90,90,0.5), transparent 25%),
+    radial-gradient(circle at -30% 65%, rgba(255,255,255,0.5), transparent 20%),
+    radial-gradient(circle at -30% 95%, rgba(255,255,255,0.5), transparent 30%),
+    linear-gradient(to top, rgba(255, 255, 255, 0.9) 100%, transparent 90%);
+}
+
+.dark .mobilebar {
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.9) 0%,
+      rgba(0,0,0,0.6) 15%,
+      transparent 35%
+    ),
+    radial-gradient(circle at 0% 10%, rgba(70,140,255,0.6), transparent 25%),
+    radial-gradient(circle at 0% 45%, rgba(255,90,90,0.5), transparent 25%),
+    radial-gradient(circle at -30% 65%, rgba(255,255,255,0.5), transparent 20%),
+    radial-gradient(circle at -30% 95%, rgba(252, 252, 252, 0.5), transparent 80%),
+    linear-gradient(to top, rgba(0, 0, 0, 0.868) 100%, transparent 90%);
+}
+
+.custom-nav-item-m.active-with-curve-m::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: -100px;
+  height: 20px;
+  width: 100px;
+  background-color: transparent;
+  border-bottom-right-radius: 30px;
+  box-shadow: 35px 0 0 0 #FFFFFF;
+}
+
+.dark .custom-nav-item-m.active-with-curve-m::before {
+  box-shadow: 35px 0 0 0 #030303;
+}
+
+.custom-nav-item-m.active-with-curve-m::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: -100px;
+  height: 20px;
+  width: 100px;
+  background-color: transparent;
+  border-bottom-left-radius: 30px;
+  box-shadow: -35px 0 0 0 #FFFFFF;
+}
+
+.dark .custom-nav-item-m.active-with-curve-m::after {
+  box-shadow: -35px 0 0 0 #030303;
+}
